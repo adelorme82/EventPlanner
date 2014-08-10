@@ -3,7 +3,7 @@ global class TextMessageRecieverController
 {
     public static final String ATTEND = 'ok';
     public static final String MASS_TEXT = 'Mass text';
-    public static final String APPROVED_NUMBER = '6023277948';
+    public static final String APPROVED_NUMBER = '+16023277948';
     public TextMessageRecieverController(ApexPages.StandardController sc)
     {
 
@@ -121,7 +121,7 @@ global class TextMessageRecieverController
 
     private static List<Event__c> getEvent(String eventKey)
     {
-        String search = '%' + eventKey + '%';
+        String search = '%' + eventKey.toLowerCase() + '%';
         return [SELECT Id, Name, Location__c, Start_Time__c FROM Event__c WHERE SMS_Keys__c like :search];
     }
 
