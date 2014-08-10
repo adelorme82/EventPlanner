@@ -1,0 +1,56 @@
+<project name="EventPlanner" basedir="." xmlns:sf="antlib:com.salesforce">
+    <!-- Properties, these get injected by Jenkins -->
+    <property file="build.properties"/>
+    <property environment="env"/>
+
+    <condition property="env.SF_USERNAME" value="${build.username}">
+        <not><isset property="env.SF_USERNAME"/></not>
+    </condition>
+    <condition property="env.SF_PASSWORD" value="${build.password}">
+        <not><isset property="env.SF_PASSWORD"/></not>
+    </condition>
+    <condition property="env.SF_URL" value="${build.serverurl}">
+        <not><isset property="env.SF_URL"/></not>
+    </condition>
+
+    <property name="SF_USERNAME" value="${env.SF_USERNAME}"/>
+    <property name="SF_PASSWORD" value="${env.SF_PASSWORD}"/>
+    <property name="SF_URL" value="${env.SF_URL}"/> 
+
+    <target name="deploy">
+        <echo message="Pushing assets into target Org"/>
+        <tstamp>
+            <format property="current.time" pattern="hh:mm:ss aa" />
+        </tstamp>
+        <echo message="${current.time}" />
+        <sf:deploy username="${SF_USERNAME}" 
+                   password="${SF_PASSWORD}" 
+                   serverurl="${SF_URL}" 
+                   maxPoll="240" 
+                   pollWaitMillis="30000" 
+                   deployRoot="." 
+                   runAllTests="false"/>
+        <echo message="Push complete"/>
+    </target>
+
+    <target name="retrieveUnpackaged">
+      <mkdir dir="retrieveUnpackaged"/>
+      <!-- Retrieve the contents into another directory -->
+      <sf:retrieve username="${build.username}" password="${build.password}" serverurl="${build.serverurl}" maxPoll="240" retrieveTarget="." unpackaged="unpackaged/package.xml"/>
+    </target>
+
+    <!-- Salesforce Push, This assumes that Jenkins has 
+         checked out the metadata from git -->
+    <target name="deployWithTests">
+        <echo message="Pushing assets into target Org"/>
+        <sf:deploy username="${SF_USERNAME}" 
+                   password="${SF_PASSWORD}" 
+                   serverurl="${SF_URL}" 
+                   maxPoll="240" 
+                   pollWaitMillis="30000" 
+                   deployRoot=".">
+        </sf:deploy>
+        <echo message="Push complete"/>
+    </target>
+
+</project>
