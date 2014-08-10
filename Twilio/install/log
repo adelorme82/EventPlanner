@@ -1,0 +1,162 @@
+------- Ant diagnostics report -------
+Apache Ant(TM) version 1.9.3 compiled on December 23 2013
+
+-------------------------------------------
+ Implementation Version
+-------------------------------------------
+core tasks     : 1.9.3 in file:/C:/apache-ant-1.9.3/lib/ant.jar
+
+-------------------------------------------
+ ANT PROPERTIES
+-------------------------------------------
+ant.version: Apache Ant(TM) version 1.9.3 compiled on December 23 2013
+ant.java.version: 1.7
+Is this the Apache Harmony VM? no
+Is this the Kaffe VM? no
+Is this gij/gcj? no
+ant.core.lib: C:\apache-ant-1.9.3\lib\ant.jar
+ant.home: C:\apache-ant-1.9.3
+
+-------------------------------------------
+ ANT_HOME/lib jar listing
+-------------------------------------------
+ant.home: C:\apache-ant-1.9.3
+ant-antlr.jar (11612 bytes)
+ant-apache-bcel.jar (15104 bytes)
+ant-apache-bsf.jar (9792 bytes)
+ant-apache-log4j.jar (8637 bytes)
+ant-apache-oro.jar (9756 bytes)
+ant-apache-regexp.jar (9616 bytes)
+ant-apache-resolver.jar (9687 bytes)
+ant-apache-xalan2.jar (8147 bytes)
+ant-commons-logging.jar (9765 bytes)
+ant-commons-net.jar (91320 bytes)
+ant-jai.jar (28269 bytes)
+ant-javamail.jar (13844 bytes)
+ant-jdepend.jar (13866 bytes)
+ant-jmf.jar (12323 bytes)
+ant-jsch.jar (46559 bytes)
+ant-junit.jar (114882 bytes)
+ant-junit4.jar (13110 bytes)
+ant-launcher.jar (18381 bytes)
+ant-netrexx.jar (16317 bytes)
+ant-swing.jar (13289 bytes)
+ant-testutil.jar (21043 bytes)
+ant.jar (2007365 bytes)
+
+-------------------------------------------
+ USER_HOME/.ant/lib jar listing
+-------------------------------------------
+user.home: C:\Users\Austin
+No such directory.
+
+-------------------------------------------
+ Tasks availability
+-------------------------------------------
+image : Missing dependency javax.media.jai.PlanarImage
+sshexec : Missing dependency com.jcraft.jsch.Logger
+scp : Missing dependency com.jcraft.jsch.Logger
+sshsession : Missing dependency com.jcraft.jsch.Logger
+jdepend : Missing dependency jdepend.xmlui.JDepend
+A task being missing/unavailable should only matter if you are trying to use it
+
+-------------------------------------------
+ org.apache.env.Which diagnostics
+-------------------------------------------
+Not available.
+Download it at http://xml.apache.org/commons/
+
+-------------------------------------------
+ XML Parser information
+-------------------------------------------
+XML Parser : com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl
+XML Parser Location: unknown
+Namespace-aware parser : com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser
+Namespace-aware parser Location: unknown
+
+-------------------------------------------
+ XSLT Processor information
+-------------------------------------------
+XSLT Processor : com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl
+XSLT Processor Location: unknown
+
+-------------------------------------------
+ System properties
+-------------------------------------------
+java.runtime.name : Java(TM) SE Runtime Environment
+sun.boot.library.path : C:\Program Files\Java\jdk1.7.0_51\jre\bin
+java.vm.version : 24.51-b03
+ant.library.dir : C:\apache-ant-1.9.3\lib
+java.vm.vendor : Oracle Corporation
+java.vendor.url : http://java.oracle.com/
+path.separator : ;
+java.vm.name : Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg : sun.io
+user.script : 
+user.country : US
+sun.java.launcher : SUN_STANDARD
+sun.os.patch.level : 
+java.vm.specification.name : Java Virtual Machine Specification
+user.dir : C:\Users\Austin\Documents\Dropbox\Ethos\Twilio\install
+java.runtime.version : 1.7.0_51-b13
+java.awt.graphicsenv : sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs : C:\Program Files\Java\jdk1.7.0_51\jre\lib\endorsed
+os.arch : amd64
+java.io.tmpdir : C:\Users\Austin\AppData\Local\Temp\
+line.separator : 
+
+java.vm.specification.vendor : Oracle Corporation
+user.variant : 
+os.name : Windows 8
+ant.home : C:\apache-ant-1.9.3
+sun.jnu.encoding : Cp1252
+java.library.path : C:\Program Files\Java\jdk1.7.0_51\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.7.0_51\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\Git\bin;C:\Program Files (x86)\Apache Group\Apache2\bin;C:\apache-ant-1.9.3\bin;C:\Python27;C:\Python27\Scripts;C:\cygwin64\bin;C:\Program Files\nodejs\;C:\Users\Austin\Documents\Dropbox\Programs\Sublime Text Build 3047 x64;C:\Users\Austin\AppData\Roaming\npm;.
+java.specification.name : Java Platform API Specification
+java.class.version : 51.0
+sun.management.compiler : HotSpot 64-Bit Tiered Compilers
+os.version : 6.2
+user.home : C:\Users\Austin
+user.timezone : America/Phoenix
+java.awt.printerjob : sun.awt.windows.WPrinterJob
+java.specification.version : 1.7
+file.encoding : Cp1252
+user.name : Austin
+java.class.path : C:\apache-ant-1.9.3\lib\ant-launcher.jar;C:\apache-ant-1.9.3\lib\ant-antlr.jar;C:\apache-ant-1.9.3\lib\ant-apache-bcel.jar;C:\apache-ant-1.9.3\lib\ant-apache-bsf.jar;C:\apache-ant-1.9.3\lib\ant-apache-log4j.jar;C:\apache-ant-1.9.3\lib\ant-apache-oro.jar;C:\apache-ant-1.9.3\lib\ant-apache-regexp.jar;C:\apache-ant-1.9.3\lib\ant-apache-resolver.jar;C:\apache-ant-1.9.3\lib\ant-apache-xalan2.jar;C:\apache-ant-1.9.3\lib\ant-commons-logging.jar;C:\apache-ant-1.9.3\lib\ant-commons-net.jar;C:\apache-ant-1.9.3\lib\ant-jai.jar;C:\apache-ant-1.9.3\lib\ant-javamail.jar;C:\apache-ant-1.9.3\lib\ant-jdepend.jar;C:\apache-ant-1.9.3\lib\ant-jmf.jar;C:\apache-ant-1.9.3\lib\ant-jsch.jar;C:\apache-ant-1.9.3\lib\ant-junit.jar;C:\apache-ant-1.9.3\lib\ant-junit4.jar;C:\apache-ant-1.9.3\lib\ant-launcher.jar;C:\apache-ant-1.9.3\lib\ant-netrexx.jar;C:\apache-ant-1.9.3\lib\ant-swing.jar;C:\apache-ant-1.9.3\lib\ant-testutil.jar;C:\apache-ant-1.9.3\lib\ant.jar;C:\Program Files\Java\jdk1.7.0_51\lib\tools.jar
+java.vm.specification.version : 1.7
+sun.arch.data.model : 64
+java.home : C:\Program Files\Java\jdk1.7.0_51\jre
+sun.java.command : org.apache.tools.ant.launch.Launcher -diagnostics
+java.specification.vendor : Oracle Corporation
+user.language : en
+awt.toolkit : sun.awt.windows.WToolkit
+java.vm.info : mixed mode
+java.version : 1.7.0_51
+java.ext.dirs : C:\Program Files\Java\jdk1.7.0_51\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path : C:\Program Files\Java\jdk1.7.0_51\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_51\jre\classes
+java.vendor : Oracle Corporation
+file.separator : \
+java.vendor.url.bug : http://bugreport.sun.com/bugreport/
+sun.cpu.endian : little
+sun.io.unicode.encoding : UnicodeLittle
+sun.desktop : windows
+sun.cpu.isalist : amd64
+
+-------------------------------------------
+ Temp dir
+-------------------------------------------
+Temp dir is C:\Users\Austin\AppData\Local\Temp\
+Temp dir is writeable
+Temp dir alignment with system clock is 66 ms
+
+-------------------------------------------
+ Locale information
+-------------------------------------------
+Timezone Mountain Standard Time offset=-25200000
+
+-------------------------------------------
+ Proxy information
+-------------------------------------------
+Java1.5+ proxy settings:
+Direct connection
+
+
