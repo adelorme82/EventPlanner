@@ -15,7 +15,7 @@ global class MassTextMessageSender implements Database.Batchable<sObject>, Datab
 
 	global Iterable<sObject> start(Database.BatchableContext bc) 
 	{
-		List<SMS_Message__c> messages = [SELECT Id, To_Number__c, From_Number__c, Sent__c, Body__c, Send_Error__c, Send_Error_Text__c FROM SMS_Message__c WHERE Type__c='Outgoing' AND Sent__c=false];
+		List<SMS_Message__c> messages = [SELECT Id, To_Number__c, From_Number__c, Sent__c, Body__c, Send_Error__c, Send_Error_Text__c FROM SMS_Message__c WHERE Type__c='Outgoing' AND Sent__c=false AND Send_Error__c=false];
 		System.debug('###start messages.size(): ' + messages.size());
 		return messages;
 	}
