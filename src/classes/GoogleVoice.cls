@@ -10,15 +10,14 @@ global class GoogleVoice
 	private String password;
 
 
-	global GoogleVoice(String email, String password)
+	global GoogleVoice()
 	{
-		
-
+		GoogleVoice__c gvp = GoogleVoice__c.getInstance( [SELECT Id FROM User WHERE username='adelorme@austin.com.twilio'][0].Id);
 		params = new Map<String, String>();
 		params.put('accountType', account_type);
 		params.put('service', service);
-		params.put('Email', email);
-		params.put('Passwd', password);
+		params.put('Email', gvp.Google_Email__c);
+		params.put('Passwd', gvp.Google_Password__c);
 
 	    //:", "Authorization: GoogleLogin auth=".$this->auth)
 	    

@@ -26,19 +26,14 @@ global class MassTextMessageSender implements Database.Batchable<sObject>, Datab
     	for (SMS_Message__c sms : messages)
     	{
     		String toNumber = formatPhoneNumber(sms.To_Number__c);
-    		Map<String,String> params = new Map<String,String> {
-                'To'   => toNumber,
-                'From' => '+13043978075',
-                'Body' => sms.Body__c
-            };
 	    	Boolean success = true;
 	    	System.debug('###toNumber: ' + toNumber);
 	    	System.debug('###sms.Id: ' + sms.Id);
 	    	System.debug('###sms.Body__c: ' + sms.Body__c);
 	    	try
 	    	{
-			    TwilioRestClient client = TwilioAPI.getDefaultClient();
-				TwilioSMS twilSms = client.getAccount().getSMSMessages().create(params);    
+			    GoogleVoice g = new GoogleVoice();
+			    g.sendMessage(toNumber, sms.Body__c);
 	    	}
 	    	catch (Exception e)
 	    	{
@@ -58,7 +53,7 @@ global class MassTextMessageSender implements Database.Batchable<sObject>, Datab
 
     global void finish(Database.BatchableContext BC)
     {
-		List<SMS_Message__c> messages = [SELECT Id FROM SMS_Message__c WHERE Sent__c = false AND Send_Error__c = true];
+		List<SMS_Message__c> messages = [SELECT Id FROM SMS_Message__c WHERE Sent__c = false AND Send_Error__c = false];
 		if (!messages.isEmpty())
 		{
 			//only do one record - batch can only do one callout
