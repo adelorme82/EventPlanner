@@ -62,6 +62,13 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>External_Id__c</fullName>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
         <fullName>Location__c</fullName>
         <externalId>false</externalId>
         <label>Location</label>
@@ -102,4 +109,5 @@
     <pluralLabel>Events</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
 </CustomObject>

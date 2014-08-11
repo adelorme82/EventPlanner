@@ -25,6 +25,7 @@ global class MassTextMessageSender implements Database.Batchable<sObject>, Datab
 
     	for (SMS_Message__c sms : messages)
     	{
+            System.debug('###raw toNumber: ' + sms.To_Number__c);
     		String toNumber = formatPhoneNumber(sms.To_Number__c);
 	    	Boolean success = true;
 	    	System.debug('###toNumber: ' + toNumber);

@@ -61,7 +61,7 @@
         <relationshipLabel>Attendees</relationshipLabel>
         <relationshipName>Attendees</relationshipName>
         <relationshipOrder>1</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
